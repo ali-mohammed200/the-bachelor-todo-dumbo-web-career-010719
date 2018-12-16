@@ -24,8 +24,8 @@ def count_contestants_by_hometown(data, hometown)
   data.each {|season, elemObjArr|
     #win = elemObjArr[0]["occupation"]
     elemObjArr.each{|personObj|
-      if personObj["occupation"] == occupation
-        return personObj["name"]
+      if personObj["hometown"] == hometown
+        counter += 1
       end
     }
   }
