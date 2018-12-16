@@ -20,7 +20,14 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
-  # code here
+  data.each {|season, elemObjArr|
+    #win = elemObjArr[0]["occupation"]
+    elemObjArr.each{|personObj|
+      if personObj["occupation"] == occupation
+        return personObj["name"]
+      end
+    }
+  }
 end
 
 def get_occupation(data, hometown)
