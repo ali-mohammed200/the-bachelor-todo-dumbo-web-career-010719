@@ -20,6 +20,7 @@ def get_contestant_name(data, occupation)
 end
 
 def count_contestants_by_hometown(data, hometown)
+  counter = 0
   data.each {|season, elemObjArr|
     #win = elemObjArr[0]["occupation"]
     elemObjArr.each{|personObj|
