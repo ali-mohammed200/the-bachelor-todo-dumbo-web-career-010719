@@ -11,7 +11,7 @@ end
 def get_contestant_name(data, occupation)
   win = ""
   data.each {|season, elemObjArr|
-    win = elemObjArr
+    win = elemObjArr[0]
   }
   win
 end
