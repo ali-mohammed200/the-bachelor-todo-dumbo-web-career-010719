@@ -44,5 +44,10 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  # code here
+  counter = 0
+  ageTotal = 0
+  data[season].each {|elemObj|
+    ageTotal += elemObj["age"].to_i
+    counter += 1
+  }
 end
