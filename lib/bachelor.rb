@@ -50,4 +50,5 @@ def get_average_age_for_season(data, season)
     ageTotal += elemObj["age"].to_i
     counter += 1
   }
+  ageTotal/counter
 end
