@@ -3,9 +3,10 @@ def get_first_name_of_season_winner(data, season)
   data[season].each {|elemObj|
     if elemObj["status"] == "Winner"
       win = elemObj["name"]
+      return win.split(" ")[0]
     end
   }
-  win.split(" ")[0]
+  
 end
 
 def get_contestant_name(data, occupation)
