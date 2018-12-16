@@ -1,7 +1,9 @@
 def get_first_name_of_season_winner(data, season)
   win = ""
-  win = data[season].each {|elemObj|
-    elemObj["status"].find {|e| e == "Winner"}
+  data[season].each {|elemObj|
+    if elemObj["status"] == "Winner"
+      win = elemObj["name"]
+    end
   }
   win
 end
