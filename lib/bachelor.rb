@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
       win = elemObj["name"]
     end
   }
-  win.split(" ")[0]
+  win
 end
 
 def get_contestant_name(data, occupation)
