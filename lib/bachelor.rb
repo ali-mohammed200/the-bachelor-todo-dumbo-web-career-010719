@@ -9,7 +9,11 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  # code here
+  win = ""
+  data.each {|season, elemObjArr|
+    win = elemObjArr
+  }
+  win
 end
 
 def count_contestants_by_hometown(data, hometown)
